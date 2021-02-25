@@ -260,7 +260,11 @@ section.gallery .margin {
 @media (max-width: 800px) {
   nav ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  nav ul li {
+    margin: 0;
   }
 
   section.hero h3 {

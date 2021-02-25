@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  margin: 0;
+}
+
+/* Navigation */
+header {
+  padding: 15px;
+}
+
+header h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 20px;
+}
+
+nav ul li {
+  /* background: #4facfe; */
+  text-align: center;
+  padding: 5px 10px;
+  display: inline;
+  margin: 10px;
+}
+
+nav ul li a {
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #000;
+}
+
+header a {
+  font-family: 'Courgette', cursive;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Hero Section */
+section.hero {
+  background: olive;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('https://ddwnews.org/wp-content/uploads/2019/07/Chicago-5.jpg')
+    no-repeat center center/cover;
+  position: relative;
+}
+
+section.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+section.hero * {
+  z-index: 10;
+  color: #fff;
+}
+
+section.hero h3,
+section.hero p {
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
+
+section.hero h3 {
+  font-size: 3rem;
+}
+
+section.hero p {
+  font-size: 1.1rem;
+  margin: 0 20px 20px 20px;
+}
+
+section.hero button {
+  background: transparent;
+  border: 2px solid #4facfe;
+  padding: 10px 35px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: 'Courgette', cursive;
+  transition: background 2s ease-out;
+}
+
+section.hero button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Another Header */
+.heading {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  font-size: 40px;
+  font-family: 'Courgette', cursive;
+}
+
+/* Todo In Chicago */
+section.city-tour {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 20px;
+  text-align: center;
+  margin: 0 10px 0 10px;
+  font-family: 'Courgette', cursive;
+  font-size: 1.5rem;
+}
+
+section.city-tour h3 {
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+/* Footer */
+footer.footer {
+  text-align: center;
+  /* background: #4facfe; */
+
+  padding: 30px 0;
+  font-family: 'Courgette', cursive;
+}
+
+footer.footer .social {
+  display: inline-block;
+  /* grid-template-columns: repeat(4, auto); */
+}
+
+footer.footer .social a {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.fa-facebook-square {
+  color: #4867aa;
+}
+
+.fa-instagram {
+  color: linear-gradient(
+    90deg,
+    rgba(0, 33, 36, 0.8911939775910365) 0%,
+    rgba(121, 9, 120, 1) 0%,
+    rgba(250, 54, 0, 1) 59%
+  );
+}
+.fa-youtube-square {
+  color: rgb(236, 42, 42);
+}
+.fa-twitter-square {
+  color: rgb(25, 179, 240);
+}
+
+footer.footer .footer-intro {
+  font-size: 20px;
+}
+
+footer.footer span {
+  display: block;
+  margin-top: 3px;
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section.hero h3 {
+    font-size: 2rem;
+  }
+  section.hero p {
+    font-size: 0.9rem;
+  }
+
+  section.city-tour {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  section.hero button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  section.city-tour {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

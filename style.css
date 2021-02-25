@@ -94,6 +94,7 @@ section.hero h3 {
 section.hero p {
   font-size: 1.1rem;
   margin: 0 20px 20px 20px;
+  line-height: 1.4;
 }
 
 section.hero button {
@@ -111,7 +112,7 @@ section.hero button:hover {
   color: #fff;
 }
 
-/* Another Header */
+/* Another heading */
 .heading {
   text-align: center;
   margin-bottom: 5rem;

@@ -212,6 +212,50 @@ section.about p {
   line-height: 1.4;
   margin: 20px 20px 0 20px;
 }
+
+/* Gallery */
+.parks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.restos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.beaches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.fall {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+section.gallery .autumn {
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+section.gallery .margin {
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
 @media (max-width: 800px) {
   nav ul {
     display: grid;
@@ -234,6 +278,36 @@ section.about p {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .parks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .restos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .beaches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .fall {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -255,6 +329,36 @@ section.about p {
   section.city-tour {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .parks {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .restos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .beaches {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .fall {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 

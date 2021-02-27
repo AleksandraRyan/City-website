@@ -156,11 +156,22 @@ footer.footer .social a {
   text-decoration: none;
   margin: 5px;
 }
-
+/* Facebook Icon */
 .fa-facebook-square {
-  color: #4867aa;
+  color: #3766ca;
+}
+.fa-facebook-square:hover {
+  color: #244999;
+}
+/* Twitter Icon */
+.fa-twitter-square {
+  color: rgb(25, 179, 240);
 }
 
+.fa-twitter-square:hover {
+  color: rgb(9, 137, 187);
+}
+/* Instagram Icon */
 .fa-instagram {
   color: linear-gradient(
     90deg,
@@ -169,11 +180,15 @@ footer.footer .social a {
     rgba(250, 54, 0, 1) 59%
   );
 }
+.fa-instagram:hover {
+  color: rgb(182, 22, 182);
+}
+/* Youtube Icon */
 .fa-youtube-square {
   color: rgb(236, 42, 42);
 }
-.fa-twitter-square {
-  color: rgb(25, 179, 240);
+.fa-youtube-square:hover {
+  color: rgb(192, 13, 13);
 }
 
 footer.footer .footer-intro {
